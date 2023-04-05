@@ -1,0 +1,176 @@
+.about{
+    &__content{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        height: 1050px;
+        background:var(--yellow-theme-background-color);
+        // border: 3px solid crimson;
+       
+
+        &__personalWrapper, &__servicesWrapper{
+            width: 50%;
+        }
+
+        &__personalWrapper{
+            h3{
+                margin-bottom: 10px;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var( --yellow-theme-main-color);
+            }
+            h3.personalInformationHeadeText{
+           padding-top: 20px;
+            }
+
+            p{
+                color: var(--yellow-theme-sub-text-color);
+                font-size: 1.8rem;
+                line-height: 1.6;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed yellow;
+            }
+            ul>li{
+                line-height: 1rem;
+                margin-bottom: 15px;
+                span.title,
+                span.value {
+                  font-size: 18px;
+                  font-weight: 700;
+                  letter-spacing: 0.5px;
+                  border-bottom: 2px solid var(--yellow-theme-main-color);
+                  position: relative;
+                  display: inline-block;
+                  margin-right: 16px;
+                // border: 2px solid red;
+                  padding-bottom: 5px;
+                  color: white;
+                }
+
+                span.value{
+                    border: none;
+                }
+            }
+        }
+
+        // This css is for the right part
+        // circle 
+       &__servicesWrapper{
+        border: 2px dashed whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        // Selecting the icons div 
+                  &__innerContent{
+                   width: 350px;
+                //    border: 2px solid blue;
+                   height: 350px;
+                   background: radial-gradient(180px,yellow,transparent 90%);
+                   position: relative;
+                   border-radius: 50%;
+                   border: 1.5px solid yellow ;
+                   border: 2px solid white; //perimeter of circle 
+                   animation: rotation 10s infinite linear;
+
+                //    relative to it's parent which is innerContent 
+                   div:nth-child(1){
+                    position: absolute;
+                    top:-29px;
+                    right: 140px;
+                   }
+                   div:nth-child(2){
+                    position: absolute;
+                    top: 314px;
+                    right: 135px;
+                    
+                   }
+                   div:nth-child(3){
+                    position: absolute;
+                    left: 318px;
+                    top: 126px;
+                   }
+                   div:nth-child(4){
+                    position: absolute;
+                    top: 122px;
+                    right: 318px;
+                    
+                   }
+                  }
+
+       }
+
+    }
+   
+ 
+}
+
+@keyframes rotation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:768px){
+    .about__content{
+        flex-direction: column;
+        &__personalWrapper, &__servicesWrapper{
+            width: 100%; //want the two section take full width in mobile view
+        }
+
+        &__servicesWrapper{
+             margin: 10px 0px;
+
+         
+        }
+
+        &__servicesWrapper{
+            margin: 10px 0px;
+            &__innerContent{
+                width: 250px;
+                height: 250px;
+                background: radial-gradient(100px,yellow,transparent 120%);
+
+                div:nth-child(1) {
+                    position: absolute;
+                    top: -15%;
+                    left: 38%;
+                  }
+                  div:nth-child(2) {
+                    position: absolute;
+                  top: 217px;
+                    left: 40%;
+                  }
+                  div:nth-child(3) {
+                    position: absolute;
+                    left: 208px;
+                    bottom: 31px;
+                  }
+                  div:nth-child(4) {
+                    position: absolute;
+                    left: -12%;
+                    top: 40%;
+                  }
+          
+            }
+        }
+      
+}
+  
+}
+
+@media only screen and (max-width:350px) and (min-width:280px){
+    .about{
+        &__content{
+            height: 1200px;
+            &__servicesWrapper{
+                // background: var(--yellow-theme-sub-text-color);
+            }
+
+        }
+    }
+}

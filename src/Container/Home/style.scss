@@ -1,0 +1,86 @@
+.home{
+    position:relative;
+    
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // direction column because of the Hire Button 
+    flex-direction: column;
+
+    // to center the heading 
+
+&__text-wrapper{
+   
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: yellow;
+    // h1 will take some margin as default 
+    margin: 0;
+    font-weight:500;
+    font-size: 8rem;
+    line-height: 10rem;
+    position: relative;
+    overflow: hidden; //because we have to do typing effect
+    white-space: nowrap; //The white-space property specifies how white-space inside an element is handled.Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line.
+
+    //animation in h1
+    animation: typingEffectAnimation 2.5s steps(30,end);
+
+
+}
+}
+
+@media only screen and (max-width : 550px){
+    .home__text-wrapper h1{
+        font-size: 3rem; //little bit small for small screen
+        line-height: 5rem;
+    }
+}
+
+@media only screen and (min-width : 551px) and (max-width : 768px){
+    .home__text-wrapper h1{
+        font-size: 4rem; 
+        line-height: 6rem;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:990px){
+    .home__text-wrapper h1{
+        font-size: 6rem; 
+        line-height: 8rem;
+    }
+}
+
+@keyframes typingEffectAnimation {
+    from {
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+
+// Hire Button 
+
+button{
+    cursor: pointer;
+    padding: 10px 65px;
+    background: transparent;
+    color: yellow;
+    font-size: 2rem;
+    border: 1px solid yellow;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button:hover{
+    background: yellow;
+    color: black;
+}
+

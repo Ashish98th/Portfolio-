@@ -1,0 +1,39 @@
+.wrapper{
+    display: flex;
+    border-bottom: 1px dashed yellow;
+    align-items: center;
+    padding: 20px;
+
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        line-height:1rem;
+        text-transform: capitalize;
+        color: yellow;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    span{
+        svg{
+            color:yellow;
+        }
+    }
+}
+
+// Media Query 
+
+@media only screen and (max-width:300px){
+    .wrapper{
+        h2{
+            font-size: 25px;
+        }
+        span{
+            svg{
+                color:yellow;
+                font-size: 25px;
+            }
+        }
+    }
+}

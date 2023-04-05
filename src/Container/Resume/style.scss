@@ -1,0 +1,204 @@
+.resume{
+    height: 100%;
+    // border: 3px dotted crimson;
+}
+
+.timeline{
+    // border: 3px solid blue;
+    display: flex;
+    
+    width: 100%;
+    padding: 20px;
+    background: var( --yellow-theme-background-color);
+
+
+    
+
+    &__experience, &__education{
+// border: 2px groove rgb(197, 11, 30);
+width: 50%;
+gap: 2rem;
+
+
+
+
+&__headertext{
+    display: inline-block;
+    // border: 3px solid red;
+    color: var(--yellow-theme-sub-text-color );
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    position: relative;
+    margin-left: 270px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+&__headertext::before,&__headertext::after{
+position:absolute;
+content: '';
+width: 2px;
+height: 5px;
+
+// border: 2px solid rgb(21, 205, 91);
+background-color: var(--yellow-theme-main-color);
+bottom: -1px;
+// If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element to a unit above/below the bottom edge of its nearest positioned ancestor.
+
+}
+
+&__headertext::before{
+    left: 0;
+}
+&__headertext::after{
+right: 0;
+}
+
+&__vertical-timeline-element{
+    // border: 3px solid crimson;
+    padding: 0px 0px 30px 0px;
+
+    &:last-child{
+        // border: 3px dotted rgb(100, 45, 219);
+        padding: 0px;
+    }
+}
+
+.vertical-timeline-element-title-wrapper{
+    // border: 3px solid rgb(29, 8, 90);
+    display: flex;
+    flex-direction: column;
+    
+    // align-items: center;
+  
+
+    h3,h4{
+        font-size: 2rem;
+    }
+    h4{
+        margin-left: 0.5rem;
+    }
+    h5{
+        color: var(--yellow-theme-sub-text-color);
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+}
+.vertical-timeline-element-date{
+    opacity: 1;
+    font-size: 1.2rem;
+}
+.description{
+    // border: 3px solid crimson;
+    font-size:13px;
+    
+    
+}
+
+    }
+}
+
+@media only screen and (max-width:768px){
+    .timeline{
+        flex-direction: column;
+        
+        &__experience, &__education{
+            width: 100%;
+            gap: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width:460px){
+
+    .timeline{
+        &__experience__headertext{
+margin-left: 127px;
+        }
+        &__education__headertext{
+            margin-left: 127px;
+        }
+    }
+   
+}
+
+@media only screen and (max-width:1000px) and (min-width:769px){
+    .timeline{
+        &__education__headertext{
+            margin-left: 150px;
+        }
+        &__experience__headertext{
+            margin-left: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width:360px){
+    .timeline{
+        &__experience__headertext{
+margin-left: 80px;
+        }
+        &__education__headertext{
+            margin-left: 80px;
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width:540px) and (min-width:400px){
+    .timeline{
+        &__experience__headertext,&__education__headertext{
+margin-left: 190px;
+        }
+      
+        
+    }
+}
+
+@media only screen and (max-width:359px) and (min-width:280px){
+    .timeline{
+        &__experience__headertext,&__education__headertext{
+font-size: small;
+margin-left: 93px;
+
+// &__vertical-timeline-element-title-wrapper{
+//     border: 2px solid yellow;
+// }
+
+        }
+      
+        
+    }
+    .vertical-timeline-element-title-wrapper{
+        // border: 2px solid yellow; 
+        background-color: yellowgreen;
+        
+        font-size: 19px;
+
+        h3,h4
+        {
+            // background-color: whitesmoke;
+            // width: 80%;
+            font-size: 1rem;
+        }
+    }
+    .vertical-timeline-element-subtitle{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:413px) and (min-width:360px){
+.timeline{
+    &__experience__headertext,&__education__headertext{
+        background-color: crimson;
+        margin-left: 130px;
+}
+}
+}
+

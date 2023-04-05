@@ -1,0 +1,29 @@
+.navbar__container_menu {
+    color:var(--yellow-theme-main-color);
+    display: flex;
+    list-style: none;
+   
+    
+}
+
+/* Targetting the link  */
+ .navbar__container_menu a{
+color: var(--yellow-theme-main-color);
+text-decoration: none;
+}
+.home_link{
+    text-decoration: none;
+}
+.navbar__container_menu li{
+    text-decoration: none;
+    list-style: none;
+    color: yellow;
+    padding: 0px 20px;
+    font-size: large;
+}
+
+.navbar{
+    background: fixed;
+    background-color: black;
+    height: 70px;
+} 
