@@ -189,7 +189,7 @@
 
 
 import React, { useState } from "react";
-import {FaBars,FaReact} from "react-icons/fa";
+import {FaReact} from "react-icons/fa";
 // import {HiX} from "react-icons/hi";
 import {Link} from "react-router-dom";
 import "./navbar.css";
@@ -198,9 +198,9 @@ import './style.scss';
 
 const Navbar=()=>{
    const[toggleIcon,setToggleIcon]=useState(false);
-    const handleToggleIcon=()=>{
-   setToggleIcon(!toggleIcon);
-    }
+//     const handleToggleIcon=()=>{
+//    setToggleIcon(!toggleIcon);
+//     }
     return(
         <div>
             <nav className="navbar">
