@@ -198,9 +198,9 @@ import './style.scss';
 
 const Navbar=()=>{
    const[toggleIcon,setToggleIcon]=useState(false);
-//     const handleToggleIcon=()=>{
-//    setToggleIcon(!toggleIcon);
-//     }
+    const handleToggleIcon=()=>{
+   setToggleIcon(!toggleIcon);
+    }
     return(
         <div>
             <nav className="navbar">
