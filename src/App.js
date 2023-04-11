@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter,Link,Route,Routes,useLocation} from "react-router-dom";
+import {Route,Routes,useLocation} from "react-router-dom";
 import './App.scss';
 import Particles from "react-tsparticles";  
 import {loadFull} from "tsparticles";
