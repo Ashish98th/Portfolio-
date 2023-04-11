@@ -215,9 +215,9 @@ const Navbar=()=>{
                 <li className="list_item"><Link to="/portfolio">PORTFOLIO</Link> </li>
                 <li className="list_item"><Link to="/Contact">CONTACT</Link></li>
             </ul>
-            {/* <div className="nav-icon" onClick={handleToggleIcon}>
+            <div className="nav-icon" onClick={handleToggleIcon}>
                  {toggleIcon?<HiX size={30}/>:<FaBars size={30}/>}
-            </div> */}
+            </div>
             </nav>
         </div>
     )
