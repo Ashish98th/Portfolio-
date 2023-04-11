@@ -189,8 +189,8 @@
 
 
 import React, { useState } from "react";
-import {FaReact} from "react-icons/fa";
-// import {HiX} from "react-icons/hi";
+import { FaBars, FaReact } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
 import {Link} from "react-router-dom";
 import "./navbar.css";
 import './style.scss';
