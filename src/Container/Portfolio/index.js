@@ -111,9 +111,9 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a href="javascript:void(0)">
+                <button>
                   <img alt="dummy data" src={item.image} />
-                </a>
+                </button>
               </div>
               <div className="overlay">
                 {index === hoveredValue && (
